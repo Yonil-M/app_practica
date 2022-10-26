@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
                   backgroundColor: Colors.white,
                   backgroundImage: NetworkImage("https://cdn2.iconfinder.com/data/icons/audio-16/96/user_avatar_profile_login_button_account_member-512.png"),
                 ),
+                SizedBox(height: 120.0 ,),
                 
                 Container(
             margin: EdgeInsets.symmetric(horizontal: 15.0,vertical: 15.0),
@@ -29,7 +30,10 @@ class HomePage extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10.0),),
                   child: ListTile(
-                      title: Text("Email address"),
+                      title: Text("Email address",style: 
+                      TextStyle(
+                      color: Colors.black.withOpacity(0.5)
+                      ) ,),
                       subtitle: Container(
                         child: Row(
                           children: [
@@ -58,7 +62,10 @@ class HomePage extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10.0),),
                   child: ListTile(
-                      title: Text("Email address"),
+                      title: Text("Password",style: 
+                      TextStyle(
+                      color: Colors.black.withOpacity(0.5)
+                      ) ,),
                       subtitle: Container(
                         child: ListTile(
                           title: Text("************",
@@ -85,8 +92,14 @@ class HomePage extends StatelessWidget {
                   
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Signup"),
-                    Text("Forgot Password"),
+                    Text("Signup",style: 
+                      TextStyle(
+                      color: Colors.black.withOpacity(0.5)
+                      ) ,),
+                    Text("Forgot Password",style: 
+                      TextStyle(
+                      color: Colors.black.withOpacity(0.5)
+                      ) ,),
                   ],
                 ),
               ),
